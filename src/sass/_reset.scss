@@ -1,0 +1,23 @@
+@use "variables" as v;
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+
+html{
+    font-size: 62,5%;
+}
+
+body{
+    font-family: v.$fontFamilyGlobal;
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+    background-color: v.$backgroundGlobal;
+    color: v.$colorMain;
+}
+a{
+    color:v.$colorMain;
+}
