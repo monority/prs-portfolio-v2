@@ -13,7 +13,7 @@ const BoxContent = ({ keys, title, action, content, image, arial_image, typeIcon
                 <div className="wrapper-icon">
                     <IconCustom isShow="true" size="2rem" type={typeIcon} className="icon-content" />
                     {isShow ? <IconCustom size="2rem" type={typeIconSecond} className="icon-content" /> : null}
-             
+
                 </div>
             </div>
         </div>
