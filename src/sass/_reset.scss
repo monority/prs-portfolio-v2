@@ -1,23 +1,25 @@
 @use "variables" as v;
 
-*{
+* {
     box-sizing: border-box;
     scroll-behavior: smooth;
-    
+    scrollbar-color: #8e8e8e #fff;
+    scrollbar-width: thin;
 }
 
-html{
-    font-size: 62,5%;
+html {
+    font-size: 62, 5%;
 }
 
-body{
-    font-family: v.$fontFamilyGlobal;
+body {
+    font-family: v.$fontGlobal;
     font-size: 1.6rem;
     margin: 0;
     padding: 0;
     background-color: v.$backgroundGlobal;
     color: v.$colorMain;
 }
-a{
-    color:v.$colorMain;
+
+a {
+    color: v.$colorMain;
 }

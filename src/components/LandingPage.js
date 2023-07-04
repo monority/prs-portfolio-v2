@@ -1,11 +1,28 @@
 import React from 'react'
-
+import icons from '../array/svg';
 const LandingPage = () => {
+
+    const iconsmap = icons.map(svg => {
+        return (
+            <li>
+                <img src={`${process.env.PUBLIC_URL}/icon/${svg}.svg`}></img>
+                </li>
+        )
+    })
     return (
         <>
-            <h1>Welcome to my Website</h1>
-            <h2>developer <strong>○</strong> creative</h2>
-            <p className='btn btn-redirect'>Answer me anything</p>
+            <div className="wrapper-text">
+                <h1>Front-end Developer</h1>
+                <p>Hello, i'm Ronan, i'm passionate by developing Front-End application for all formats. <br /> I live in Lille.</p>
+
+                <ul>
+                    {iconsmap}
+                </ul>
+
+            </div>
+            <div className="wrapper-image">
+                <img src={`${process.env.PUBLIC_URL}/dev.png`} alt="Developer Illustration" />
+            </div>
         </>
     )
 }
