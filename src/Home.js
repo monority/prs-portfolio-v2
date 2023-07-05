@@ -1,8 +1,8 @@
 import './sass/main.scss';
-import Focus from './components/FocusPage';
-import Project from './components/ProjectPage';
-import LandingPage from './components/LandingPage';
-import About from './components/About';
+import Focus from './Pages/FocusPage';
+import Project from './Pages/ProjectPage';
+import LandingPage from './Pages/LandingPage';
+import About from './Pages/AboutPage';
 function Home() {
 
   return (
@@ -21,7 +21,7 @@ function Home() {
       <div id="about-page" className='block'>
         <div className="container-content">
           <div className="wrappers">
-          <About/>
+            <About />
           </div>
         </div>
       </div>

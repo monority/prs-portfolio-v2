@@ -1,19 +1,19 @@
 import React from 'react'
+import IconCustom from './IconCustom'
 
 
-const BoxFocus = ({ title, content, img, arial_image }) => {
+const BoxFocus = ({ title, content , typeIcon, typeIconSecond, isShow = false }) => {
   return (
-    <div className='wrapper-focus'>
 
-      <div className="wrapper-image">
+    <div className="wrapper-focus-content">
+      <h1>{title}</h1>
+      <hr />
+      <p>{content}</p>
 
-        <img src={`${process.env.PUBLIC_URL}/${img}`} alt={arial_image} />
-      </div>
-      <div className="wrapper-focus-content">
-        <h1>{title}</h1>
-        <p>{content}</p>
+      <IconCustom isShow="true" size="2rem" type={typeIcon} className="icon-content" />
+      {isShow ? <IconCustom size="2rem" type={typeIconSecond} className="icon-content" /> : null}
 
-      </div>
+
     </div>
   )
 }

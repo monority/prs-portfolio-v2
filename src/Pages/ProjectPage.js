@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import BoxContent from './BoxContent'
+import BoxContent from '../components/BoxContent'
 
 const Project = () => {
 
