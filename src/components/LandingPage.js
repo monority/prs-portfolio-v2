@@ -13,7 +13,7 @@ const LandingPage = () => {
         <>
             <div className="wrapper-text">
                 <h1>Front-end Developer</h1>
-                <p>Hello, i'm Ronan, i'm passionate by developing Front-End application for all formats. <br /> I live in Lille.</p>
+                <p>Hello, i'm Ronan, i'm passionate by developing Front-End application for all formats. <br /> I'm currently based in Lille.</p>
 
                 <ul>
                     {iconsmap}
