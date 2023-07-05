@@ -8,7 +8,7 @@ function Home() {
     <div className="main">
       <div id="landing-page">
 
-        <div className="container">
+        <div className="container-content">
 
           <div className="wrappers">
             <LandingPage />

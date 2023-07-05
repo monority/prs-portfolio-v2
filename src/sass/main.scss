@@ -14,15 +14,23 @@ a {
 
 h1 {
     font-size: v.$fontSizeTitleSmall;
-    margin: 0;
+
     text-align: center;
+    font-family: v.$fontThird;
+    font-weight: 100;
 }
 
-h2 {
-    margin: 0;
+h2,h3 {
+
     text-align: center;
     font-size: v.$fontSizeTitleXSmall;
 }
+
+ul,h1,h2,h3{
+    padding: 0;
+    margin: 0;
+}
+
 
 .container {
     max-width: 110rem;
@@ -30,8 +38,11 @@ h2 {
 }
 
 .container-content {
-    max-width: 80rem;
+    max-width:20rem;
     margin: 0 auto;
+    @media screen and (min-width : v.$lg-breakpoint ) {
+        max-width: 80rem;
+    }   
 }
 
 .btn {
@@ -66,6 +77,20 @@ h2 {
 }
 
 
+// Animations
+
+@keyframes fadeIn {
+   0%{
+    opacity: 0;
+
+   } 
+   100%{
+    opacity: 1;
+ 
+   }
+}
+
+
 
 // Header
 
@@ -73,6 +98,7 @@ h2 {
     position: fixed;
     width: 100%;
     backdrop-filter: blur(2px);
+    box-shadow: v.$boxShadowLight;
 
     .wrappers {
         justify-content: space-between;
@@ -85,7 +111,7 @@ h2 {
             padding: 0 1rem;
 
             img {
-                width: 4rem;
+                width: 2rem;
                 cursor: pointer;
             }
 
@@ -127,13 +153,54 @@ h2 {
 // Page d'accueil 
 
 #landing-page {
+    animation: fadeIn forwards 1s ease-in;
     @include center();
-
     .wrappers {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        
+        @media screen and (min-width : v.$lg-breakpoint ) {
+            display: flex;
+        }
+        
     }
+   
+    ul{
+        column-gap: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+      
+        img{
+            width: 3rem;
+        
+        } 
+    }
+    .wrapper-text{
+        @media screen and (min-width : v.$lg-breakpoint ) {
+            h1{
+                text-align: left;
+            }
+            display: flex;
+            flex-direction: column;
+            flex-basis: 50%;
+        }
+    }
+
+   
+    p{
+        font-family:v.$fontFourth;
+        line-height: 1.6;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color:v.$colorGrey;
+    }
+    h1{
+        font-weight: 900;
+        font-size: v.$fontSizeTitle;
+        
+    }
+    img{
+        width: 20rem;
+    }
+  
 }
 
 

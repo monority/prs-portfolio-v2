@@ -17,7 +17,7 @@ const Header = () => {
                         <a href='/'>
                             <img src={`${process.env.PUBLIC_URL}/logo.png`} alt='' />
                         </a>
-                        <h3>ronan</h3>
+                        <h3>ronan.dev</h3>
                     </div>
                     <div className='wrapper'>
                         <ul>
