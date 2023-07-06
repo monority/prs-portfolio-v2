@@ -11,7 +11,7 @@ const Header = () => {
     return (
         <div className='header'>
 
-            <div className='container'>
+            <div className='container-content'>
                 <div className='wrappers'>
                     <div className='wrapper'>
                         <a href='/'>
@@ -20,17 +20,26 @@ const Header = () => {
                         <h3>ronan.dev</h3>
                     </div>
                     <div className='wrapper'>
+                      
                         <ul>
                             <li className={activeLink === 0 ? 'active' : ''} onClick={() => handleLinkClick(0)}>
-                                <p>Home</p>
+                                Home
                             </li>
                             <li className={activeLink === 1 ? 'active' : ''} onClick={() => handleLinkClick(1)}>
-                                <p>Work</p>
+                                About me
                             </li>
                             <li className={activeLink === 2 ? 'active' : ''} onClick={() => handleLinkClick(2)}>
-                                <p>Personal</p>
+                                Skills
+                            </li>
+                            <li className={activeLink === 3 ? 'active' : ''} onClick={() => handleLinkClick(3)}>
+                                Projects
+                            </li>
+                            <li className={activeLink === 4 ? 'active' : ''} onClick={() => handleLinkClick(4)}>
+                                Personal
                             </li>
                         </ul>
+                    </div>
+                    <div className="wrapper">
                         <ul>
                             <li>
                                 <p>
