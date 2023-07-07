@@ -1,0 +1,11 @@
+@use "variables" as v;
+@import "mixin";
+
+#about-page {
+    @include center();
+    .wrapper-about{
+
+        border: 0.5px solid rgba(135, 135, 135, 0.117);
+    }
+    
+}

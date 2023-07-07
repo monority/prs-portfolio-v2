@@ -5,7 +5,7 @@ const LandingPage = () => {
     const iconsmap = icons.map(svg => {
         return (
             <li>
-                <img src={`${process.env.PUBLIC_URL}/icon/${svg}.svg`}></img>
+                <img src={`${process.env.PUBLIC_URL}/icon/${svg}.svg`} alt="Illustration developer"></img>
                 </li>
         )
     })

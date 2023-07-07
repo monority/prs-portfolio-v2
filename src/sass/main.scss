@@ -1,6 +1,10 @@
 @use "reset";
 @use "variables" as v;
 @import "mixin";
+@import "landing-page";
+@import "about-page";
+@import "focus-page";
+@import "project-page";
 
 // Globales
 
@@ -80,6 +84,8 @@ p {
 }
 
 
+
+
 // Animations
 
 @keyframes fadeIn {
@@ -101,6 +107,96 @@ p {
     width: 100%;
     z-index: 1;
 
+    .wrapper-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-item .active {
+        color: black;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+
+        @media only screen and (min-width: $lg-breakpoint) {
+            flex-direction: row;
+
+        }
+
+        height: 50%;
+        justify-content: space-evenly;
+    }
+
+    .nav-item a {
+        margin: 0 1rem;
+        color: v.$colorGreyLightfaded;
+        font-family: v.$fontFourth;
+        font-weight: 500;
+        font-size: 1.1rem;
+        transition: all .5s ease-in-out;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .wrapper-list a:hover {
+        color: v.$colorGold;
+    }
+
+    .nav-btn {
+        padding: 5px;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: black;
+        visibility: hidden;
+        opacity: 0;
+        font-size: 1.8rem;
+    }
+
+    .wrapper-menu,
+    .wrapper-list {
+        display: flex;
+        align-items: center;
+    }
+
+    @media only screen and (max-width: $lg-breakpoint) {
+        .wrapper-menu .nav-btn {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .wrapper-list {
+            position: fixed;
+            top: -100vh;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            background-color: rgba(255, 255, 255, 0.856);
+            transition: 1s;
+        }
+
+        .responsive-nav {
+            display: flex;
+            flex-direction: column;
+            transform: translateY(100vh);
+            height: 100vh;
+        }
+
+        .nav-close-btn {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+        }
+
+    }
 
     .wrappers {
         display: flex;
@@ -132,19 +228,8 @@ p {
         padding: 0;
     }
 
-    li {
-        color: v.$colorGrey;
-        font-family: v.$fontFourth;
-        font-weight: 500;
-        font-size: 1.2rem;
-        line-height: 1.6;
-        transition: all .5s ease-in-out;
-        cursor: pointer;
-    }
 
-    li.active {
-        color: rgb(43, 162, 127);
-    }
+
 
     p {
         cursor: pointer;
@@ -154,151 +239,3 @@ p {
 
 
 
-// Page d'accueil 
-
-#landing-page {
-    animation: fadeIn forwards 1s ease-in;
-    @include center();
-
-    .wrapper-text {
-        margin: 1rem 0;
-
-        @media screen and (min-width : v.$lg-breakpoint ) {
-            display: flex;
-            flex-direction: column;
-        }
-    }
-
-    h1 {
-        font-size: v.$fontSizeTitle;
-        font-weight: 800;
-
-        @media screen and (min-width : v.$lg-breakpoint ) {
-            text-align: left;
-        }
-    }
-
-    img {
-        width: calc(16rem + 8vw);
-    }
-
-    ul {
-        display: flex;
-        column-gap: 2rem;
-        flex-wrap: wrap;
-
-        img {
-            width: calc(1.7rem + 1.3vw);
-
-        }
-    }
-}
-
-#about-page {
-    @include center();
-
-    .wrapper-image {
-        @include center();
-    }
-
-    .wrapper-text {
-        margin: 1rem 0;
-
-        @media screen and (min-width : v.$lg-breakpoint ) {
-            display: flex;
-            flex-direction: column;
-
-        }
-    }
-
-    img {
-        border-radius: 2rem;
-        width: calc(16rem + 8vw);
-    }
-
-    h1 {
-        font-size: v.$fontSizeTitle;
-
-        @media screen and (min-width : v.$lg-breakpoint ) {
-            text-align: left;
-        }
-    }
-
-    p {
-        font-size: v.$fontSizedefault;
-    }
-}
-
-
-#focus-page {
-    .wrapper-focus {
-        display: flex;
-        background-color: v.$backgroundColorSide;
-        box-shadow: v.$boxShadow;
-        border: v.$borderClassic;
-        border-radius: 1rem;
-        margin: 0 2rem;
-        padding: 2rem;
-
-        h1 {
-            text-align: left;
-        }
-
-        p {
-            color: v.$colorGreyfaded;
-            font-family: v.$fontThird;
-            font-size: v.$fontSizedMedium;
-            font-weight: 100;
-            line-height: 2rem;
-        }
-    }
-}
-
-
-#project-page {
-    .wrapper {
-        display: flex;
-    }
-
-    .wrapper-box {
-        display: flex;
-        background-color: rgb(233, 237, 241);
-        box-shadow: v.$boxShadow;
-        border: v.$borderClassic;
-        border-radius: 0.8rem;
-        margin: 0 2rem;
-        padding: 1.5rem;
-        transition: all .3s ease-in-out;
-        width: 50%;
-
-        &:hover {
-            background-color: v.$colorWhite;
-            transform: scale(1.05);
-
-        }
-    }
-
-    .wrapper-image {
-        display: flex;
-        align-items: center;
-        flex-basis: 25%;
-        justify-content: center;
-        img {
-            width: 50%;
-
-        }
-    }
-
-    .wrapper-content {
-        display: flex;
-        flex-basis: 65%;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 0 1rem;
-
-        p {
-            color: v.$colorGreyfaded;
-            font-size: 0.9rem;
-        }
-    }
-}

@@ -1,0 +1,52 @@
+@use "variables" as v;
+@import "mixin";
+
+
+#project-page {
+    .wrapper {
+        display: flex;
+    }
+
+    .wrapper-box {
+        display: flex;
+        background-color: rgb(233, 237, 241);
+        box-shadow: v.$boxShadow;
+        border: v.$borderClassic;
+        border-radius: 0.8rem;
+        margin: 0 2rem;
+        padding: 1.5rem;
+        transition: all .3s ease-in-out;
+        width: 50%;
+
+        &:hover {
+            background-color: v.$colorWhite;
+            transform: scale(1.05);
+
+        }
+    }
+
+    .wrapper-image {
+        display: flex;
+        align-items: center;
+        flex-basis: 25%;
+        justify-content: center;
+
+        img {
+            width: 50%;
+
+        }
+    }
+
+    .wrapper-content {
+        display: flex;
+        flex-basis: 65%;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 1rem;
+
+        p {
+            color: v.$colorGreyfaded;
+            font-size: 0.9rem;
+        }
+    }
+}

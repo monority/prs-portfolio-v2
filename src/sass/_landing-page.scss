@@ -1,0 +1,40 @@
+@use "variables" as v;
+@import "mixin";
+
+#landing-page {
+    animation: fadeIn forwards 1s ease-in;
+    @include center();
+
+    .wrapper-text {
+        margin: 1rem 0;
+
+        @media screen and (min-width : v.$lg-breakpoint ) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    h1 {
+        font-size: v.$fontSizeTitle;
+        font-weight: 800;
+
+        @media screen and (min-width : v.$lg-breakpoint ) {
+            text-align: left;
+        }
+    }
+
+    img {
+        width: calc(16rem + 8vw);
+    }
+
+    ul {
+        display: flex;
+        column-gap: 2rem;
+        flex-wrap: wrap;
+
+        img {
+            width: calc(1.7rem + 1.3vw);
+
+        }
+    }
+}
