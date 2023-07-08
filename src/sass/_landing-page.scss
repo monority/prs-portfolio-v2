@@ -1,10 +1,19 @@
 @use "variables" as v;
 @import "mixin";
-
+:root {
+    --color-white: #fff;
+    --color-gray: #c4c4c4;
+    --color-black: #000;
+    --color-purple: #8000ff;
+    --color-light-purple: #cf59e6;
+    --color-light-blue: #6bc5f8
+}
 #landing-page {
     animation: fadeIn forwards 1s ease-in;
-    @include center();
-
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
     .wrapper-text {
         margin: 1rem 0;
 
@@ -13,10 +22,19 @@
             flex-direction: column;
         }
     }
-
+    .landing-gradient{
+        background: -webkit-linear-gradient(135deg,var(--color-light-blue),var(--color-light-purple),var(--color-light-blue),var(--color-light-purple));
+        background: linear-gradient(-45deg,var(--color-light-blue),var(--color-light-purple),var(--color-light-blue),var(--color-light-purple));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 400% 400%;
+        -webkit-animation: gradient 3s ease infinite;
+        animation: gradient 3s ease infinite;
+    }
     h1 {
-        font-size: v.$fontSizeTitle;
-        font-weight: 800;
+        font-size: v.$fontSizeTitleLarge;
+        font-weight:lighter;
 
         @media screen and (min-width : v.$lg-breakpoint ) {
             text-align: left;

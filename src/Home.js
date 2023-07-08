@@ -10,44 +10,44 @@ function Home() {
 
     <div className="main">
 
-        <div id="landing-page" className='block'>
+      <div id="landing-page" className='block'>
 
-          <div className="container-content">
+        <div className="container-content">
 
-            <div className="wrappers">
-              <LandingPage />
-            </div>
+          <div className="wrappers">
+            <LandingPage />
+          </div>
 
+        </div>
+      </div>
+
+      <div id="about-page" className='block'>
+        <div className="container-content">
+          <div className="wrappers">
+            <About />
           </div>
         </div>
+      </div>
 
-        <div id="about-page" className='block'>
-          <div className="container-content">
-            <div className="wrappers">
-              <About />
-            </div>
+      <div id="focus-page" className='block'>
+
+        <div className="container-content">
+          <div className="wrappers">
+            <Focus />
           </div>
+
         </div>
-   
-        <div id="focus-page" className='block'>
+      </div>
+      <div id="project-page" className='block'>
 
-          <div className="container-content">
-            <div className="wrappers">
-              <Focus />
-            </div>
-
+        <div className="container-content">
+          <div className="wrappers">
+            <Project />
           </div>
-        </div>
-        <div id="project-page" className='block'>
 
-          <div className="container-content">
-            <div className="wrappers">
-              <Project />
-            </div>
-
-          </div>
         </div>
- 
+      </div>
+
     </div>
   );
 }

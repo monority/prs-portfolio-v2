@@ -15,7 +15,7 @@ li {
 
 
 h1 {
-    font-family: v.$fontThird;
+    font-family: v.$fontFourth;
     font-size: v.$fontSizeTitleSmall;
     font-weight: 100;
     text-align: center;
@@ -45,7 +45,7 @@ p {
 
 .block {
     @media screen and (min-width : v.$lg-breakpoint ) {
-        min-height: 80vh;
+        min-height: 100vh;
     }
 
     min-height: 100vh;
@@ -96,6 +96,21 @@ p {
     100% {
         opacity: 1;
     }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+
 }
 
 // Header
@@ -235,7 +250,3 @@ p {
         cursor: pointer;
     }
 }
-
-
-
-
