@@ -4,10 +4,12 @@
 #about-page {
     @include center();
     animation: fadeIn forwards 1s ease-in;
-    @include center();
+
 
     .wrapper-text {
-        margin: 1rem 0;
+        margin: 0 3rem;
+        display: flex;
+ 
 
         @media screen and (min-width : v.$lg-breakpoint ) {
             display: flex;
@@ -25,7 +27,8 @@
     }
 
     img {
-        width: calc(16rem + 8vw);
+        width: calc(12rem + 5vw);
+
     }
 
     ul {
@@ -33,10 +36,15 @@
         column-gap: 2rem;
         flex-wrap: wrap;
 
-        img {
-            width: calc(1.7rem + 1.3vw);
-
-        }
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    .subtext-title{
+        color: rgb(105, 105, 105);
+    }
+    .subtext-location{
+        color: grey;
     }
     
 }

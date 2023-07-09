@@ -6,16 +6,21 @@ const LandingPage = () => {
         return (
             <li>
                 <img src={`${process.env.PUBLIC_URL}/icon/${svg}.svg`} alt="Illustration developer"></img>
-                </li>
+            </li>
         )
     })
     return (
-        <>
+        <>  <div className="wrapper-image">
+            <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Illustration developer"></img>
+        </div>
             <div className="wrapper-text">
-              <h1>beautiful and creative things.</h1>
-              <h1>turning my <span className='landing-gradient'>ideas</span> into my project<strong>.</strong></h1>
+
+                <p>Bonjour, je m'appelle</p>
+                <p>Ronan Chenu</p>
+                <p className='gradient'>Je suis front-end <strong className='landing-gradient'>développeur</strong> junior.</p>
             </div>
-          
+
+
         </>
     )
 }

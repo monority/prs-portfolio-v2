@@ -39,13 +39,14 @@ p {
     color: v.$colorGrey;
     font-family: v.$fontFourth;
     font-weight: 500;
-    font-size: 1.2rem;
-    line-height: 1.6;
+    font-size: 1.45rem;
+    line-height: 2;
+    margin: 0;
 }
 
 .block {
     @media screen and (min-width : v.$lg-breakpoint ) {
-        min-height: 100vh;
+        min-height: 80vh;
     }
 
     min-height: 100vh;
