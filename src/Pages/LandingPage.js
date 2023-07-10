@@ -1,5 +1,6 @@
 import React from 'react'
 import icons from '../array/svg';
+import IconCustom from '../components/IconCustom';
 const LandingPage = () => {
 
     const iconsmap = icons.map(svg => {
@@ -11,16 +12,25 @@ const LandingPage = () => {
     })
     return (
         <>
+
+            <div className="content-wrapper">
+                <div className="wrapper-title">
+                    <h1 className='gradient'>Front-end  <br />développeur</h1>
+                </div>
+                <div className="wrapper-city">
+                    <p><strong>●</strong> Lille <strong>●</strong>Junior</p>
+                </div>
+                <div className="wrapper-text">
+                    <p>Bienvenue, je suis Ronan Chenu.<br />Je souhaite créer des belles applications web. </p>
+                </div>
+                <div className="btn-wrapper">
+                <p className='btn-contact'>Me contacter</p>
+            </div>
+            </div>
+            
+       
             <div className="wrapper-image">
                 <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Illustration developer"></img>
-            </div>
-            <div className="wrapper-text">
-  
-                <p>Bonjour, je m'appelle</p>
-                <p>Ronan Chenu</p>
-               
-                <p className='gradient'>Je suis front-end <strong className='landing-gradient'>développeur</strong> junior.</p>
-                <div className="btn-wrap"><p className='btn-contact'>Me contacter</p></div>
             </div>
         </>
     )

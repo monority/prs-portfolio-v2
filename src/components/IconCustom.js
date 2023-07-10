@@ -1,8 +1,9 @@
 import React from 'react';
+import {BsCodeSlash} from 'react-icons/bs'
 import { BiLogoRedux, BiLogoReact } from 'react-icons/bi';
-import {AiOutlineProfile, AiOutlineHome } from 'react-icons/ai';
+import {AiOutlineProfile, AiOutlineHome, AiFillHome } from 'react-icons/ai';
 import {SiJavascript} from 'react-icons/si';
-import {FaPeopleGroup} from 'react-icons/fa6'
+import {FaPeopleGroup, FaLocationDot, FaDev} from 'react-icons/fa6'
 import {BsPersonWorkspace, BsFillPersonLinesFill} from 'react-icons/bs'
 
 const components = {
@@ -14,6 +15,10 @@ const components = {
   AiOutlineHome,
   BsPersonWorkspace,
   BsFillPersonLinesFill,
+  FaLocationDot,
+  AiFillHome,
+  FaDev,
+  BsCodeSlash,
   
 };
 const IconCustom = ({ type, size, className, action}) => {

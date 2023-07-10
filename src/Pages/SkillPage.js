@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import TitleSkills from '../components/TitleSkills'
 import BoxSkills from '../components/BoxSkills';
-import Tabs from '../components/Tabs';
+
 
 const SkillPage = ({ typicon, title, content, }) => {
 

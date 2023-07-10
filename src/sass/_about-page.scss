@@ -13,16 +13,7 @@
             flex-direction: column;
         }
     }
-    h1 {
-        margin: 0.5rem 0;
-        color: #21163d;
-        line-height: 2rem;
-        font-size: v.$font-big;
-        font-weight: 200;
-        @media screen and (min-width : v.$lg-breakpoint ) {
-            text-align: left;
-        }
-    }
+
     h2{    
         margin: 0.5rem 0;
         font-size: v.$font-big;
@@ -39,10 +30,11 @@
         flex-wrap: wrap;
     }
     p{
-        font-size: v.$font-smedium;
+        font-size: v.$font-xsmedium;
+   
     }
     .subtext-title{
-        color: rgb(164, 108, 216);
+        color: rgb(108, 216, 173);
     }
     .subtext-location{
         color: grey;
