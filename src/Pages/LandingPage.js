@@ -10,17 +10,18 @@ const LandingPage = () => {
         )
     })
     return (
-        <>  <div className="wrapper-image">
-            <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Illustration developer"></img>
-        </div>
+        <>
+            <div className="wrapper-image">
+                <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Illustration developer"></img>
+            </div>
             <div className="wrapper-text">
-
+  
                 <p>Bonjour, je m'appelle</p>
                 <p>Ronan Chenu</p>
+               
                 <p className='gradient'>Je suis front-end <strong className='landing-gradient'>développeur</strong> junior.</p>
+                <div className="btn-wrap"><p className='btn-contact'>Me contacter</p></div>
             </div>
-
-
         </>
     )
 }

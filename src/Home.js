@@ -1,53 +1,45 @@
 import './sass/main.scss';
-import Focus from './Pages/FocusPage';
-import Project from './Pages/ProjectPage';
+import SkillPage from './Pages/SkillPage';
+import ProjectPage from './Pages/ProjectPage';
 import LandingPage from './Pages/LandingPage';
-import About from './Pages/AboutPage';
+import AboutPage from './Pages/AboutPage';
 
 function Home() {
 
   return (
 
     <div className="main">
-
       <div id="landing-page" className='block'>
-
         <div className="container-content">
-
           <div className="wrappers">
             <LandingPage />
           </div>
-
         </div>
       </div>
 
       <div id="about-page" className='block'>
         <div className="container-content">
           <div className="wrappers">
-            <About />
+            <AboutPage />
           </div>
         </div>
       </div>
 
       <div id="focus-page" className='block'>
-
         <div className="container-content">
           <div className="wrappers">
-            <Focus />
+            <SkillPage />
           </div>
-
         </div>
       </div>
+
       <div id="project-page" className='block'>
-
         <div className="container-content">
           <div className="wrappers">
-            <Project />
+            <ProjectPage />
           </div>
-
         </div>
       </div>
-
     </div>
   );
 }

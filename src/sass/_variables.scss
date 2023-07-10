@@ -1,54 +1,46 @@
 // font responsive
+$font-xsmall:calc(0.5rem + 0.3vw);
+$font-small: calc(0.6rem + 0.3vw);
+$font-xsmedium: calc(0.8rem + 0.3vw);
+$font-smedium: calc(0.9rem + 0.3vw);
+$font-medium: calc(1rem + 0.3vw);
+$font-xmedium: calc(1.1rem + 0.3vw);
+$font-large: calc(1.2rem + 0.3vw);
+$font-xlarge:calc(1.3rem + 0.3vw);
+$font-xxlarge:calc(1.5rem + 0.3vw);
+$font-big:calc(2rem + 0.3vw);
 
-$fontSizeSmall: calc(0.6rem + 0.3vw);
-$fontSizeTitle: calc(2rem + 0.8vw);
-$fontSizeTitleSmall: calc(1.5rem + 0.3vw);
-$fontSizeTitleXSmall: calc(1.2rem + 0.3vw);
-$fontSizeTitleLarge: calc(3rem + 0.5vw);
-$fontSizeTitleXLarge: calc(4rem + 0.5vw);
-$fontSizeTitleXXLarge: calc(5rem + 0.5vw);
-$fontSizedefault: calc(0.8rem + 0.5vw);
-$fontSizedMedium: calc(0.8rem + 0.25vw);
-$fontSizeLarge: calc(0.9rem + 0.4vw);
-$fontGlobal: 'Mulish', sans-serif;
-$fontSecond: 'Inter', sans-serif;
-$fontThird :'Nunito Sans',
-sans-serif;
-$fontFourth : 'Sarabun',
-sans-serif;
-$fontFifth :'Abel',
-sans-serif;
+// font type
+$font-default: 'Mulish', sans-serif;
+$font-second: 'Inter', sans-serif;
+$font-third :'Nunito Sans', sans-serif;
+$font-fourth :'Be Vietnam Pro', sans-serif;
+$font-fifth :'Abel',sans-serif;
 
-// Colors 
-$colorwhitelight: rgb(240, 240, 240);
-$colorGold: rgb(250, 184, 4);
-$colorGreyfaded: rgba(70, 70, 70, 0.9);
-$colorGreyLightfaded: rgba(87, 87, 87, 0.494);
-$colorMain: rgb(60, 60, 60);
-$colorBlackLight: rgb(87, 87, 87);
-$colorGrey: rgb(105, 105, 105);
-$colorIcon: rgb(40, 51, 41);
-$colorWhite: rgb(240, 240, 240);
-$colorBlue: #6bc5f8;
-$colorPurple: #8000ff;
-$color-light-purple: #cf59e6;
+// colors
+$color-default: #3c3c3c;
+$color-darkgrey: #575757;
+$color-faded-grey: #464646e6;
+$color-faded-lightgrey: #575757a1;
+$color-gold: #fab804;
+$color-grey: #696969;
+$color-lightblue: #6bc5f8;
+$color-lightpurple: #cf59e6;
+$color-purple: #8000ff;
+$color-white: #f0f0f0;
 
-// Background
-
-$backgroundGlobal: rgb(239, 239, 239);
-$backgroundColorSide: rgb(243, 215, 105);
+//  colors-background
+$background-main-color: #efefef;
+$background-second-color: #f3d769;
 
 
-// Styling
+// styling
+$border-classic : 0.2px #e0e0e083 solid;
+$box-shadow : 0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;
+$box-shadow-white : 0 10px 15px 2px #31313128, 0 4px 6px 2px #3030302a;
+$box-lightshadow : 0 5px 5px -3px #cdcdcd4d, 0 4px 3px -4px #d2d2d24d;
 
-$borderClassic : 1px rgba(197, 197, 197, 0.808) solid;
-$boxShadow : 0 10px 15px -3px rgb(0 0 0 / 0.1),
-0 4px 6px -4px rgb(0 0 0 / 0.1);
-$boxShadowLight : 0 5px 5px -3px rgba(205, 205, 205, 0.3),
-0 4px 3px -4px rgba(210, 210, 210, 0.3);
-
-// Media querries
-
+// media querries
 $sm-breakpoint: 576px;
 $md-breakpoint: 768px;
 $lg-breakpoint: 992px;

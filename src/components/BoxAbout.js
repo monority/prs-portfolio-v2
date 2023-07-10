@@ -3,8 +3,6 @@ import IconCustom from './IconCustom'
 
 
 const BoxAbout = ({ title, content, typeIcon }) => {
-
-
     return (
         <div className="wrapper-about">
             <div className="wrapper-about-content">
@@ -12,10 +10,6 @@ const BoxAbout = ({ title, content, typeIcon }) => {
                 <h1>{title}</h1>
                 <hr />
                 <p>{content}</p>
-
-
-
-
             </div>
         </div>
     )

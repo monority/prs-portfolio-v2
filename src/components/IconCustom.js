@@ -16,10 +16,8 @@ const components = {
   BsFillPersonLinesFill,
   
 };
-
 const IconCustom = ({ type, size, className, action}) => {
   const SpecificIcon = components[type];
-
   return  <SpecificIcon size={size} onClick={action} className={className}/>;
 };
 

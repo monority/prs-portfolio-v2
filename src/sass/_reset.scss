@@ -6,20 +6,14 @@
     scrollbar-color: #8e8e8e #fff;
     scrollbar-width: thin;
 }
-
 html {
-    font-size: 62, 5%;
+    font-size: 62,5%;
 }
-
 body {
-    font-family: v.$fontGlobal;
     font-size: 1.6rem;
     margin: 0;
     padding: 0;
-    background-color: v.$backgroundGlobal;
-    color: v.$colorMain;
-}
-
-a {
-    color: v.$colorMain;
+    font-family: v.$font-default;
+    background-color: v.$background-main-color;
+    color: v.$color-default;
 }

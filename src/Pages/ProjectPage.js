@@ -1,7 +1,7 @@
 import React from 'react'
 import BoxContent from '../components/BoxContent'
 
-const Project = () => {
+const ProjectPage = () => {
 
   return (
     <>
@@ -30,4 +30,4 @@ const Project = () => {
   )
 }
 
-export default Project;
+export default ProjectPage;

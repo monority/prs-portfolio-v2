@@ -8,19 +8,31 @@
     --color-light-purple: #cf59e6;
     --color-light-blue: #6bc5f8;
 }
+
 #landing-page {
     animation: fadeIn forwards 1s ease-in;
     @include center();
+    .wrappers{
+        flex-direction: column;
+        @media screen and (min-width : v.$lg-breakpoint ) {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    
     .wrapper-text {
-        margin: 0 2rem;
+        margin: 2rem 0;
+        text-align: center;
 
         @media screen and (min-width : v.$lg-breakpoint ) {
             display: flex;
             flex-direction: column;
+            margin: 0 2rem;
+            text-align: left;
         }
     }
     .landing-gradient{
-        background: -webkit-linear-gradient(135deg,var(--color-light-blue),var(--color-light-purple),var(--color-light-blue),var(--color-light-purple));
+        background: -webkit-linear-gradient(135deg,var(v.$color-lightblue),var(--color-light-purple),var(--color-light-blue),var(--color-light-purple));
         background: linear-gradient(-45deg,var(--color-light-blue),var(--color-light-purple),var(--color-light-blue),var(--color-light-purple));
         background-clip: text;
         -webkit-background-clip: text;
@@ -29,25 +41,44 @@
         -webkit-animation: gradient 3s ease infinite;
         animation: gradient 3s ease infinite;
     }
-    h1 {
-        font-size: v.$fontSizeTitle;
-    
 
-        @media screen and (min-width : v.$lg-breakpoint ) {
-            text-align: left;
-        }
+    p{
+        font-size: v.$font-xmedium;
     }
-
     img {
-        width: calc(8rem + 3vw);
+        width: calc(7.6rem + 3vw);
     }
-
     ul {
         display: flex;
         column-gap: 2rem;
         flex-wrap: wrap;
-
-
     }
+    .btn-wrap{
+        margin: 1rem 0;
+        display: flex;
+        justify-content: center;
+        @media screen and (min-width : v.$lg-breakpoint ) {
 
+            justify-content: flex-start;
+        }
+    }
+    .btn-contact{
+        background-color: v.$color-white;
+        box-shadow: v.$box-shadow;
+        border: v.$border-classic;
+        border-radius: 1rem;
+        color: v.$color-default;
+        font-size: 1.2rem;
+        transition: all 0.5s;
+        text-align: center;
+        width: 11rem;
+        &:hover{
+            box-shadow: v.$box-shadow-white;
+            transform: scale(1.05);
+            color: rgb(241, 221, 154);
+        }
+    }
+  
 }
+
+

@@ -4,44 +4,45 @@
 #about-page {
     @include center();
     animation: fadeIn forwards 1s ease-in;
-
-
     .wrapper-text {
-        margin: 0 3rem;
-        display: flex;
- 
 
+        display: flex;
+        flex-direction: column;
         @media screen and (min-width : v.$lg-breakpoint ) {
             display: flex;
             flex-direction: column;
         }
     }
-
     h1 {
-        font-size: v.$fontSizeTitle;
+        margin: 0.5rem 0;
+        color: #21163d;
+        line-height: 2rem;
+        font-size: v.$font-big;
         font-weight: 200;
-
         @media screen and (min-width : v.$lg-breakpoint ) {
             text-align: left;
         }
     }
-
+    h2{    
+        margin: 0.5rem 0;
+        font-size: v.$font-big;
+        line-height: 2rem;
+        text-align: left;
+    }
     img {
         width: calc(12rem + 5vw);
 
     }
-
     ul {
         display: flex;
         column-gap: 2rem;
         flex-wrap: wrap;
-
     }
     p{
-        font-size: 1.2rem;
+        font-size: v.$font-smedium;
     }
     .subtext-title{
-        color: rgb(105, 105, 105);
+        color: rgb(164, 108, 216);
     }
     .subtext-location{
         color: grey;

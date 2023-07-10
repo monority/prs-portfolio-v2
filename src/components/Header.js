@@ -3,8 +3,6 @@ import React from 'react';
 import NavBar from './Nav';
 
 const Header = () => {
-
-
     return (
         <div className='header'>
 
@@ -15,23 +13,16 @@ const Header = () => {
                             <img src={`${process.env.PUBLIC_URL}/logo.png`} alt='' />
                         </a>
                         <h3>ronan.dev</h3>
-                  
                     </div>
                     <NavBar></NavBar>
-                    
                     <div className="wrapper">
                         <ul>
                             <li>
-                                <p>
-                                    <i className='fa-brands fa-github'></i>
-                                </p>
+                                <p><i className='fa-brands fa-github'></i></p>
                             </li>
                             <li>
-                                <p>
-                                    <i className='fa-brands fa-linkedin'></i>
-                                </p>
+                                <p><i className='fa-brands fa-linkedin'></i></p>
                             </li>
-                      
                         </ul>
                     </div>
                 </div>
