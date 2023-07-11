@@ -11,7 +11,7 @@ function Home() {
     <div className="main">
       <div id="landing-page" className='block'>
         <div className="container-content">
-          <div className="wrappers">
+          <div className="wraps">
             <LandingPage />
           </div>
         </div>
@@ -19,7 +19,7 @@ function Home() {
 
       <div id="about-page" className='block'>
         <div className="container-content">
-          <div className="wrappers">
+          <div className="wraps">
             <AboutPage />
           </div>
         </div>
@@ -27,7 +27,7 @@ function Home() {
 
       <div id="focus-page" className='block'>
         <div className="container-content">
-          <div className="wrappers">
+          <div className="wraps">
             <SkillPage />
           </div>
         </div>
@@ -35,7 +35,7 @@ function Home() {
 
       <div id="project-page" className='block'>
         <div className="container-content">
-          <div className="wrappers">
+          <div className="wraps">
             <ProjectPage />
           </div>
         </div>

@@ -5,6 +5,8 @@ import {AiOutlineProfile, AiOutlineHome, AiFillHome } from 'react-icons/ai';
 import {SiJavascript} from 'react-icons/si';
 import {FaPeopleGroup, FaLocationDot, FaDev} from 'react-icons/fa6'
 import {BsPersonWorkspace, BsFillPersonLinesFill} from 'react-icons/bs'
+import {ImProfile} from 'react-icons/im'
+import {FiDownload} from 'react-icons/fi'
 
 const components = {
   BiLogoRedux,
@@ -19,6 +21,8 @@ const components = {
   AiFillHome,
   FaDev,
   BsCodeSlash,
+  ImProfile,
+  FiDownload
   
 };
 const IconCustom = ({ type, size, className, action}) => {

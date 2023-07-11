@@ -12,9 +12,9 @@ function Navbar() {
         );
     };
     return (
-        <div className="wrapper-menu">
+        <div className="menu-wrap">
 
-            <div className="wrapper-list" ref={navRef}>
+            <div className="list-wrap" ref={navRef}>
                 <ul>
                     <li className="nav-item">
                         <Link to="landing-page" offset={-150} spy={true} smooth={true} duration={300}>Home</Link>

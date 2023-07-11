@@ -5,60 +5,102 @@
 #focus-page {
     position: relative;
     @include center();
-
-    .wrappers {
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 10% 10% 10%;
-        grid-gap: 20px 10px;
+    h1 {
+        font-size: v.$font-medium;
+        text-align: center;
+        @media screen and (min-width : v.$lg-breakpoint ) {
+            text-align: left;
+        }
     }
 
-    .wrapper-skill {
+    .background-purple {
+        background: linear-gradient(180deg, rgba(117, 104, 184, 0.650) 0%, rgba(110, 171, 240, 0.65)100%);
+    }
+    .background-blue {
+        background: linear-gradient(180deg, rgba(104, 184, 177, 0.65) 0%, rgba(120, 228, 214, 0.65) 100%);
+    }
+    .background-orange {
+        background: linear-gradient(180deg, rgba(235, 195, 86, 0.65) 0%, rgba(228, 172, 120, 0.65) 100%);
+    }
+    .background-red {
+        background: linear-gradient(180deg, rgba(235, 116, 86, 0.65) 0%, rgba(228, 120, 161, 0.65) 100%);
+    }
+    .skill-wrap-content{
+        h1{
+            text-align: center;
+        }
+    }
 
+    .skill-wrap-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+        position: relative;
+        background: v.$color-white;
         border: v.$border-classic;
         border-radius: 1rem;
         box-shadow: v.$box-shadow;
-        margin: 0 1rem;
-        padding: 1rem;
-        width: 10rem;
-
-        h1 {
-            text-align: left;
-        }
-
+        padding: 2rem;
         p {
-            font-size: v.$font-medium;
-            font-weight: 100;
-            line-height: 2rem;
+            font-size: v.$font-xsmedium;
+        }
+        @media screen and (min-width : v.$lg-breakpoint ) {
+           flex-basis: 50%;
+           
+            align-items: flex-start;
+            p{
+                font-size: v.$font-small;
+            }
         }
     }
-}
-
-.container-wrap {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 2;
-    grid-row-end: span 2;
-    z-index: 1;
-}
-
-.wrapper-skills-box {
-    background: v.$color-white;
-    border: v.$border-classic;
-    border-radius: 1rem;
-    box-shadow: v.$box-lightshadow;
-    grid-column-start: 0;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: span 2;
-    padding: 1.2rem;
-
-    p {
-        font-size: v.$font-smedium;
+    .box-wrap{
+        margin: 4rem 0;
     }
-}
-
-.background-blue {
-    background: rgb(78, 56, 187);
-    background: linear-gradient(180deg, rgba(117, 104, 184, 0.233) 0%, rgba(158, 120, 228, 0.247) 100%);
+    .skill-wrap{
+   
+        border: v.$border-classic;
+        border-radius: 1rem;
+        box-shadow: v.$box-shadow;
+        padding: 1rem;
+        width: 15rem;
+        position: absolute;
+        top: -3rem;
+    }
+    .right{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .left{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .left-title{
+        @media screen and (min-width : v.$lg-breakpoint ) {
+            left: 2rem;
+            right: 0;
+        }
+    }
+    .right-title{
+        @media screen and (min-width : v.$lg-breakpoint ) {
+            left: 18rem;
+            right: 0;
+        }
+    }
+    .title-wrap{
+        margin: 5rem 0;
+        h1{
+            font-size: v.$font-ultra;
+            margin: 4rem 0;
+            text-align: center;
+            
+            @media screen and (min-width : v.$lg-breakpoint ) {
+                text-align: left;
+            }
+        }
+    }
+    .wraps{
+        flex-direction: column;
+    }
 }
