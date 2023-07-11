@@ -1,0 +1,21 @@
+@use "variables" as v;
+@import "mixin";
+
+
+#tech-page{
+    
+    .tab-wrap{
+        width: 100%;
+        column-gap: 2rem;
+        button{
+            margin: 0 2rem;
+            background-color: v.$background-main-color;
+            width: 15rem;
+            height:3rem;
+            font-size: 1.5rem;
+            border: v.$border-classic;
+            font-family: v.$font-fourth;
+        }
+    }
+}
+

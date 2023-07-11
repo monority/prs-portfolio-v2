@@ -5,28 +5,19 @@
 @import "about-page";
 @import "skill-page";
 @import "project-page";
+@import "tech-page";
 
 // Globales
 a {
     font-family: v.$font-second;
     color: v.$color-faded-lightgrey;
+    text-decoration: none;
 }
+
 li {
     list-style-type: none;
 }
-h1 {
-    font-weight: 900;
-    font-size: v.$font-ultra;
-    @media screen and (min-width : v.$lg-breakpoint ) {
-        text-align: left;
-        margin: 2rem 0;
-    }
-}
-h2,
-h3 {
-    font-size: v.$font-large;
-    text-align: center;
-}
+
 ul,
 h1,
 h2,
@@ -41,16 +32,19 @@ p {
     line-height: 2;
     margin: 0;
 }
+
 .block {
     @media screen and (min-width : v.$lg-breakpoint ) {
         min-height: 80vh;
     }
     min-height: 100vh;
 }
+
 .container {
     margin: 0 auto;
     max-width: 110rem;
 }
+
 .container-content {
     margin: 0 auto;
     max-width: 20rem;
@@ -58,6 +52,24 @@ p {
     @media screen and (min-width : v.$lg-breakpoint ) {
         max-width: 70rem;
     }
+}
+
+.title-wrap {
+    h1 {
+        font-size: v.$font-ultra;
+        margin: 0 0 4rem 0;
+        text-align: center;
+        @media screen and (min-width : v.$lg-breakpoint ) {
+            text-align: left;
+        }
+    }
+}
+
+.content-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 1rem;
 }
 
 .wraps {
@@ -77,6 +89,7 @@ p {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -86,9 +99,11 @@ p {
     0% {
         background-position: 0 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0 50%;
     }
@@ -102,19 +117,24 @@ p {
     position: fixed;
     width: 100%;
     z-index: 1;
+
     .header-wrap {
         display: flex;
         justify-content: space-between;
     }
+
     .nav-item .active {
         color: black;
     }
+
     .nav-menu {
         display: flex;
         flex-direction: column;
+
         @media only screen and (min-width: $lg-breakpoint) {
             flex-direction: row;
         }
+
         height: 50%;
         justify-content: space-evenly;
     }
@@ -127,6 +147,7 @@ p {
         transition: all .5s ease-in-out;
         text-decoration: none;
     }
+
     .list-wrap a:hover {
         color: v.$color-gold;
     }

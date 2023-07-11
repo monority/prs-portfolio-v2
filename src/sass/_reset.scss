@@ -2,7 +2,6 @@
 
 * {
     box-sizing: border-box;
-    font-smooth: never;
     -webkit-font-smoothing: none;
     scroll-behavior: smooth;
     scrollbar-color: #8e8e8e #fff;
@@ -18,7 +17,7 @@ html {
 body {
     background-color: v.$background-main-color;
     color: v.$color-default;
-    font-family: v.$font-second;
+    font-family: v.$font-fifth;
     font-size: 1.6rem;
     margin: 0;
     padding: 0;

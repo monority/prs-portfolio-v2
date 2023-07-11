@@ -3,6 +3,7 @@ import SkillPage from './Pages/SkillPage';
 import ProjectPage from './Pages/ProjectPage';
 import LandingPage from './Pages/LandingPage';
 import AboutPage from './Pages/AboutPage';
+import TechPage from './Pages/TechPage';
 
 function Home() {
 
@@ -21,6 +22,13 @@ function Home() {
         <div className="container-content">
           <div className="wraps">
             <AboutPage />
+          </div>
+        </div>
+      </div>
+      <div id="tech-page" className='block'>
+        <div className="container-content">
+          <div className="wraps">
+            <TechPage />
           </div>
         </div>
       </div>

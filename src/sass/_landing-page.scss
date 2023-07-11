@@ -5,15 +5,6 @@
     display: flex;
     animation: fadeIn forwards 1s ease-in;
     align-items: center;
-
-    h1{
-        font-size: v.$font-large;
-        text-align: center;
-        @media screen and (min-width : v.$lg-breakpoint ) {
-            font-size: $font-ultra;
-            text-align: left;
-        }
-    }
     img {
         width: 8rem;
         @media screen and (min-width : v.$lg-breakpoint ) {
@@ -24,10 +15,8 @@
     span {
         a,svg{
         color: white;
-        font-weight: 500;;
         line-height: 2;
-        margin: 0;
-        text-decoration: none;
+ 
     }
     }
     .btn-contact{
@@ -37,10 +26,9 @@
         border-radius: 1rem;
         color: v.$color-white;
         font-size: 1.2rem;
-        width: 10rem;
         transition: all 0.5s;
         text-align: center;
-        
+        width: 10rem;
         &:hover{
             background-color: #2d3ca6;
             box-shadow: v.$box-shadow-white;
@@ -59,10 +47,7 @@
     .container-content{
         width: 100%;
     }
-    .content-wrap{
-        display: flex;
-        flex-direction: column;
-    }
+
     .info-wrap{
         display: flex;
         justify-content: center;
@@ -74,7 +59,7 @@
         }
         svg{
             color: #3e51e1;
-            font-size: 1.2rem;
+            
         }
     }
     .list-wrap{
@@ -95,13 +80,7 @@
         }
     }
     .wraps{
-        flex-direction: column-reverse;
         justify-content: space-between;
-        width: 100%;
-        @media screen and (min-width : v.$lg-breakpoint ) {
-            display: flex;
-            flex-direction: row;
-        }
     }
 }
          

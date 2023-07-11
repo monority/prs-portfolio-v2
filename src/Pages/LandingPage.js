@@ -34,13 +34,11 @@ const LandingPage = () => {
                 <div className="btn-wrap">
                     <p className='btn-contact'>Contact</p>
                     <span className='btn-contact'>
-
                         <Link
                             to={cv}
                             download="CV-Ronan Chenu"
                             target="_blank"
-                            rel="noreferrer"
-                        >
+                            rel="noreferrer">
                             <IconCustom
                                 type="FiDownload"
                                 size="1rem"

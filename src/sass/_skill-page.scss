@@ -5,13 +5,6 @@
 #focus-page {
     position: relative;
     @include center();
-    h1 {
-        font-size: v.$font-medium;
-        text-align: center;
-        @media screen and (min-width : v.$lg-breakpoint ) {
-            text-align: left;
-        }
-    }
 
     .background-purple {
         background: linear-gradient(180deg, rgba(117, 104, 184, 0.650) 0%, rgba(110, 171, 240, 0.65)100%);
@@ -30,33 +23,33 @@
             text-align: center;
         }
     }
-
     .skill-wrap-box {
         display: flex;
         align-items: center;
-        justify-content: center;
         flex-direction: column;
-        
-        position: relative;
         background: v.$color-white;
         border: v.$border-classic;
         border-radius: 1rem;
         box-shadow: v.$box-shadow;
+        position: relative;
         padding: 2rem;
         p {
             font-size: v.$font-xsmedium;
         }
         @media screen and (min-width : v.$lg-breakpoint ) {
            flex-basis: 50%;
-           
             align-items: flex-start;
-            p{
-                font-size: v.$font-small;
-            }
         }
     }
     .box-wrap{
-        margin: 4rem 0;
+        margin: 0 0 4rem 0;
+        h1 {
+            font-size: v.$font-medium;
+            text-align: center;
+            @media screen and (min-width : v.$lg-breakpoint ) {
+                text-align: left;
+            }
+        }
     }
     .skill-wrap{
    
@@ -88,19 +81,6 @@
             right: 0;
         }
     }
-    .title-wrap{
-        margin: 5rem 0;
-        h1{
-            font-size: v.$font-ultra;
-            margin: 4rem 0;
-            text-align: center;
-            
-            @media screen and (min-width : v.$lg-breakpoint ) {
-                text-align: left;
-            }
-        }
-    }
-    .wraps{
-        flex-direction: column;
-    }
+
+
 }

@@ -3,10 +3,10 @@
 
 
 #project-page {
-    .wrapper {
+    .wrap {
         display: flex;
     }
-    .wrapper-box {
+    .box-wrap {
         display: flex;
         background-color: rgb(233, 237, 241);
         box-shadow: v.$box-shadow;
@@ -21,7 +21,7 @@
 
         }
     }
-    .wrapper-image {
+    .image-wrap{
         display: flex;
         align-items: center;
         flex-basis: 25%;
@@ -31,14 +31,5 @@
 
         }
     }
-    .wrapper-content {
-        display: flex;
-        flex-basis: 65%;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 0 1rem;
-        p {
-            font-size: 0.9rem;
-        }
-    }
+
 }
