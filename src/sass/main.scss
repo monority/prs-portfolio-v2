@@ -26,18 +26,28 @@ h3 {
     padding: 0;
 
 }
+h2{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: rgb(100, 183, 147);
+    text-align: center;
+    @media screen and (min-width : v.$lg-breakpoint ) {
+        text-align: left;
+    }
+}
 p {
     font-weight: 500;
-    font-size: v.$font-xmedium;
+    font-size: v.$font-xsmedium;
     line-height: 2;
     margin: 0;
 }
 
 .block {
     @media screen and (min-width : v.$lg-breakpoint ) {
-        min-height: 80vh;
+        min-height: 70vh;
     }
-    min-height: 100vh;
+    min-height: 60vh;
+    margin: 4rem 0;
 }
 
 .container {
@@ -56,11 +66,13 @@ p {
 
 .title-wrap {
     h1 {
-        font-size: v.$font-ultra;
-        margin: 0 0 4rem 0;
+        font-size: v.$font-big;
+        margin: 1rem 0;
         text-align: center;
         @media screen and (min-width : v.$lg-breakpoint ) {
             text-align: left;
+            font-size: v.$font-ultra;
+            margin: 0 0 4rem 0;
         }
     }
 }
@@ -114,13 +126,26 @@ p {
 .header {
     backdrop-filter: blur(2px);
     box-shadow: v.$box-lightshadow;
+    height: 4rem;
+ 
     position: fixed;
     width: 100%;
+    top: 0;
     z-index: 1;
-
+    .logo-wrap{
+        column-gap: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-content{
+        height: 100%;
+    }
     .header-wrap {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        height: 100%;
     }
 
     .nav-item .active {
@@ -142,7 +167,7 @@ p {
     .nav-item a {
         cursor: pointer;
         font-weight: 500;
-        font-size: 1rem;
+        font-size: 1.1rem;
         margin: 0 1rem;
         transition: all .5s ease-in-out;
         text-decoration: none;
@@ -168,7 +193,10 @@ p {
     .list-wrap {
         display: flex;
         align-items: center;
+        @media only screen and (max-width: $lg-breakpoint) {
+            order: 2;
     }
+}
 
     @media only screen and (max-width: $lg-breakpoint) {
         .menu-wrap .nav-btn {
@@ -195,6 +223,18 @@ p {
             flex-direction: column;
             transform: translateY(100vh);
             height: 100vh;
+            background: rgba(232, 232, 232, 0.960);
+            ul{
+                display: flex;
+                flex-direction: column;
+                
+                row-gap: 2rem;
+                li{
+                    a{
+                        font-size: v.$font-xlarge;
+                    }
+                }
+            }
         }
 
         .nav-close-btn {
@@ -222,13 +262,14 @@ p {
     }
 
     h3 {
+        font-size: v.$font-medium;
         font-weight: 100;
     }
 
     ul {
         display: flex;
         align-items: center;
-        column-gap: 3rem;
+        column-gap: 2rem;
         padding: 0;
     }
 

@@ -17,16 +17,19 @@ function Navbar() {
             <div className="list-wrap" ref={navRef}>
                 <ul>
                     <li className="nav-item">
-                        <Link to="landing-page" offset={-150} spy={true} smooth={true} duration={300}>Home</Link>
+                        <Link onClick={showNavbar} to="landing-page" offset={-150} spy={true} smooth={true} duration={300}>Home</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="about-page" offset={-100} spy={true} smooth={true} duration={300}>About</Link>
+                        <Link onClick={showNavbar} to="about-page" offset={-100} spy={true} smooth={true} duration={300}>About</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="focus-page" offset={-50} spy={true} smooth={true} duration={300}>Skills</Link>
+                        <Link onClick={showNavbar} to="tech-page" offset={-50} spy={true} smooth={true} duration={300}>Techno</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="project-page" offset={-50} spy={true} smooth={true} duration={300}>Project</Link>
+                        <Link onClick={showNavbar} to="focus-page" offset={-50} spy={true} smooth={true} duration={300}>Skills</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link onClick={showNavbar} to="project-page" offset={-50} spy={true} smooth={true} duration={300}>Project</Link>
                     </li>
                 </ul>
                 <button

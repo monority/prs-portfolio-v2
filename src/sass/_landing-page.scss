@@ -5,13 +5,15 @@
     display: flex;
     animation: fadeIn forwards 1s ease-in;
     align-items: center;
+    @media screen and (max-width : v.$lg-breakpoint ) {
+        margin-top: 5rem;
+     }
     img {
-        width: 8rem;
+        width: 5rem;
         @media screen and (min-width : v.$lg-breakpoint ) {
-            width: calc(15rem + 3vw);
+            width: calc(20rem + 3vw);
         }
     }
-
     span {
         a,svg{
         color: white;
@@ -71,15 +73,16 @@
         }
     }
     .text-wrap {
-        margin: 2rem 0;
         text-align: center;
+  
         @media screen and (min-width : v.$lg-breakpoint ) {
             display: flex;
             flex-direction: column;
+            margin: 2rem 0;
             text-align: left;
         }
     }
-    .wraps{
+     .wraps{
         justify-content: space-between;
     }
 }

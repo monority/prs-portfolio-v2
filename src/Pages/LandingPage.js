@@ -1,23 +1,16 @@
 import React from 'react'
-import icons from '../array/svg';
 import IconCustom from '../components/IconCustom';
 import cv from '../cv.pdf'
 import { Link } from 'react-router-dom';
 const LandingPage = () => {
 
-    const iconsmap = icons.map(svg => {
-        return (
-            <li>
-                <img src={`${process.env.PUBLIC_URL}/icon/${svg}.svg`} alt="Illustration developer"></img>
-            </li>
-        )
-    })
+
     return (
         <>
 
             <div className="content-wrap">
                 <div className="title-wrap">
-                    <h1 className='gradient'>Front-end  <br />développeur</h1>
+                    <h1>Front-end  <br />développeur</h1>
                 </div>
                 <div className="info-wrap">
                     <p><IconCustom

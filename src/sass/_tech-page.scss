@@ -2,20 +2,167 @@
 @import "mixin";
 
 
-#tech-page{
-    
-    .tab-wrap{
-        width: 100%;
-        column-gap: 2rem;
-        button{
-            margin: 0 2rem;
-            background-color: v.$background-main-color;
-            width: 15rem;
-            height:3rem;
-            font-size: 1.5remn;
-            border: v.$border-classic;
-            font-family: v.$font-fourth;
-        }
+#tech-page {
+  img {
+    width: 3.2rem;
+    animation: fade 1.2s forwards ease-in-out;
+
+  }
+  .image-wrap {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 49%;
+  }
+  .box-wrap-tab{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    @media screen and (min-width : v.$lg-breakpoint ) {
+      font-size: 1rem;
+  }
+  }
+
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .content-wrap {
+    display: flex;
+    width: 100%;
+  }
+
+  .wrap-sub {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+    @media screen and (min-width : v.$lg-breakpoint ) {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
     }
+  }
+
+  .box-wrap-text {
+    display: flex;
+    flex-basis: 50%;
+  }
+
+  .container-tab {
+    background: v.$background-main-color;
+    border: v.$border-classic;
+    box-shadow: v.$box-shadow;
+    min-width: 20rem;
+    min-height: 20rem;
+    margin: 2rem 0;
+    position: relative;
+    @media screen and (min-width : v.$lg-breakpoint ) {
+      display: flex;
+      width: 30rem;
+      margin: 0;
+      height: 22rem;
+    }
+  }
+
+  .bloc-tabs {
+    display: flex;
+    @media screen and (min-width : v.$lg-breakpoint ) {
+      display: flex;
+      flex-direction: column;
+    }
+
+  }
+
+  .tabs {
+    display: flex;
+    padding: 15px;
+    text-align: center;
+    flex-basis: 33%;
+    background: rgba(128, 128, 128, 0.162);
+    cursor: pointer;
+    border-right: v.$border-classic;
+    box-sizing: content-box;
+    position: relative;
+    outline: none;
+  }
+
+  .tabs:not(:last-child) {
+    border-bottom: v.$border-classic;
+  }
+
+  .active-tabs {
+    background: v.$background-main-color;
+    border-bottom: 1px solid transparent;
+    color: rgb(94, 22, 104);
+  }
+
+
+
+
+  button {
+    border: none;
+
+  }
+
+  .content-tabs {
+    flex-grow: 1;
+  }
+
+  .content {
+    background: v.$background-main-color;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+
+  .content h2 {
+    padding: 0px 0 5px 0px;
+  }
+
+  .content hr {
+    width: 100px;
+    height: 2px;
+    background: #222;
+    margin-bottom: 5px;
+  }
+
+  .content p {
+    width: 100%;
+    height: 100%;
+  }
+
+  .active-content {
+    display: block;
+  }
 }
 
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+}
+
+@keyframes grow {
+  0% {
+    scale: 0.8;
+  }
+
+  100% {
+    scale: 1;
+  }
+
+}

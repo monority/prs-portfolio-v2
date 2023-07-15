@@ -7,7 +7,7 @@ const SkillPage = () => {
     <>
       <div className="content-wrap">
         <div className="title-wrap">
-          <h1>Mes qualités</h1>
+          <h2>Mes qualités</h2>
         </div>
 
         <BoxSkills
@@ -24,7 +24,7 @@ const SkillPage = () => {
           titlebox="Adaption"
           content="Dans ce domaine, je considère qu'il faut savoir s'adapter aux évolutions constantes mais aussi aux besoin des entreprises. Les frameworks et librairies sont multiples et la veille technologique doit être régulière"
         />
-           <BoxSkills
+          <BoxSkills
           backgroundColor="background-orange left-title"
           title="Méthode agile"
           direction="left"
@@ -36,7 +36,7 @@ const SkillPage = () => {
           direction="right"
           title="Curiosité"
           titlebox="Appétence"
-          content="Je suis naturellement de nature curieuse et je porte de l'intérêt aux travaux des autres et aux domaines qui m'entoure. J'aime constamment apprendre de nouvelles choses et de développer mes connaissances."
+          content="Je suis naturellement de nature curieux et je porte de l'intérêt aux travaux des autres et aux domaines qui m'entoure. J'aime constamment apprendre de nouvelles choses et de développer mes connaissances."
         />
       </div>
     </>

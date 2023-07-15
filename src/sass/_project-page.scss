@@ -3,33 +3,64 @@
 
 
 #project-page {
+
+    .subtitle-wrap{
+        column-gap: 1rem;
+        display: flex;
+        align-items: center;
+    }
     .wrap {
         display: flex;
+        flex-direction: column;
+    }
+    .text-wrap{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        img{
+            width: 2rem;
+            height: 100%;
+        }
+        p{
+            font-size: v.$font-xsmedium;
+        }
+        h3{
+            font-size: v.$font-xsmedium;
+        }
     }
     .box-wrap {
         display: flex;
         background-color: rgb(233, 237, 241);
         box-shadow: v.$box-shadow;
-        border: v.$border-classic;
-        border-radius: 0.8rem;
-        margin: 0 2rem;
-        padding: 1.5rem;
-        transition: all .3s ease-in-out;
-        width: 50%;
+        border: v.$border-hard;
+        border-radius: 1rem;
+        height:25rem;
+        padding: 2rem;
+        gap: 5rem;
+        transition: all 0.5s ease-in-out;
         &:hover {
-            transform: scale(1.05);
+            transform: scale(1.01);
 
         }
+    }
+    .wrap{
+        row-gap: 5rem;
     }
     .image-wrap{
         display: flex;
         align-items: center;
-        flex-basis: 25%;
+        flex-basis: 65%;
         justify-content: center;
         img {
-            width: 50%;
+            width: 10rem;
 
         }
+    }
+    .reversed{
+        flex-direction: row-reverse;
     }
 
 }
