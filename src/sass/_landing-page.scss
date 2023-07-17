@@ -21,22 +21,7 @@
  
     }
     }
-    .btn-contact{
-        background-color: #3e51e1;
-        box-shadow: v.$box-shadow;
-        border: v.$border-classic;
-        border-radius: 1rem;
-        color: v.$color-white;
-        font-size: 1.2rem;
-        transition: all 0.5s;
-        text-align: center;
-        width: 10rem;
-        &:hover{
-            background-color: #2d3ca6;
-            box-shadow: v.$box-shadow-white;
-            transform: scale(1.02);
-        }
-    }
+
     .btn-wrap{
         display: flex;
         justify-content: center;

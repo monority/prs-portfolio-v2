@@ -4,6 +4,7 @@ import ProjectPage from './Pages/ProjectPage';
 import LandingPage from './Pages/LandingPage';
 import AboutPage from './Pages/AboutPage';
 import TechPage from './Pages/TechPage';
+import ContactPage from './Pages/ContactPage'
 
 function Home() {
 
@@ -45,6 +46,13 @@ function Home() {
         <div className="container-content">
           <div className="wraps">
             <ProjectPage />
+          </div>
+        </div>
+      </div>
+      <div id="contact-page" className='block'>
+        <div className="container-content">
+          <div className="wraps">
+            <ContactPage />
           </div>
         </div>
       </div>

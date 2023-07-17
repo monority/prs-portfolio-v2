@@ -1,0 +1,63 @@
+@use "variables" as v;
+@import "mixin";
+
+
+#contact-page {
+    @include center();
+
+    h1 {
+        text-align: center;
+
+        @media screen and (min-width : v.$lg-breakpoint ) {
+            text-align: left;
+        }
+    }
+    hr{
+        opacity: 1;
+        border: v.$border-classic;
+    }
+    .wraps{
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-submit{
+        padding: 0.5rem 1rem;
+    }
+    .content-wrap{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        background: v.$color-white;
+        border: v.$border-classic;
+        border-radius: 1rem;
+        box-shadow: v.$box-shadow;
+        position: relative;
+        padding: 2rem;
+    }
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0;
+
+        input {
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            width: 100%;
+            color: $color-grey;
+            font-size: 1rem;
+            outline: none;
+            padding: 1em 0 2em 0;
+            border: 0;
+            background: transparent;
+            border-radius: 0;
+ ;
+            display: block;
+            margin-top: -.33em;
+        }
+    }
+}

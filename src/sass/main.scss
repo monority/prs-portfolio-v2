@@ -6,6 +6,7 @@
 @import "skill-page";
 @import "project-page";
 @import "tech-page";
+@import "contact-page";
 
 // Globales
 a {
@@ -26,15 +27,18 @@ h3 {
     padding: 0;
 
 }
-h2{
+
+h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
     color: rgb(100, 183, 147);
     text-align: center;
+
     @media screen and (min-width : v.$lg-breakpoint ) {
         text-align: left;
     }
 }
+
 p {
     font-weight: 500;
     font-size: v.$font-xsmedium;
@@ -46,6 +50,7 @@ p {
     @media screen and (min-width : v.$lg-breakpoint ) {
         min-height: 70vh;
     }
+
     min-height: 60vh;
     margin: 4rem 0;
 }
@@ -55,6 +60,22 @@ p {
     max-width: 110rem;
 }
 
+.btn-contact{
+    background-color: #3e51e1;
+    box-shadow: v.$box-shadow;
+    border: v.$border-classic;
+    border-radius: 1rem;
+    color: v.$color-white;
+    font-size: 1.2rem;
+    transition: all 0.5s;
+    text-align: center;
+    width: 10rem;
+    &:hover{
+        background-color: #2d3ca6;
+        box-shadow: v.$box-shadow-white;
+        transform: scale(1.02);
+    }
+}
 .container-content {
     margin: 0 auto;
     max-width: 20rem;
@@ -69,6 +90,7 @@ p {
         font-size: v.$font-big;
         margin: 1rem 0;
         text-align: center;
+
         @media screen and (min-width : v.$lg-breakpoint ) {
             text-align: left;
             font-size: v.$font-ultra;
@@ -89,6 +111,7 @@ p {
     align-items: center;
     flex-direction: column-reverse;
     justify-content: center;
+
     @media screen and (min-width : v.$lg-breakpoint ) {
         display: flex;
         flex-direction: row;
@@ -123,24 +146,33 @@ p {
 
 // Header
 
+.header.scrolled {
+    height: 4.2rem; 
+  }
+
 .header {
     backdrop-filter: blur(2px);
     box-shadow: v.$box-lightshadow;
-    height: 4rem;
- 
+    height: 3rem;
     position: fixed;
+    transition: height 0.6s ease-in-out;
     width: 100%;
     top: 0;
     z-index: 1;
-    .logo-wrap{
+    
+
+    .logo-wrap {
         column-gap: 0.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
     }
-    .container-content{
+
+    .container-content {
         height: 100%;
     }
+
     .header-wrap {
         display: flex;
         justify-content: space-between;
@@ -193,10 +225,11 @@ p {
     .list-wrap {
         display: flex;
         align-items: center;
+
         @media only screen and (max-width: $lg-breakpoint) {
             order: 2;
+        }
     }
-}
 
     @media only screen and (max-width: $lg-breakpoint) {
         .menu-wrap .nav-btn {
@@ -224,15 +257,18 @@ p {
             transform: translateY(100vh);
             height: 100vh;
             background: rgba(232, 232, 232, 0.960);
-            ul{
+
+            ul {
                 display: flex;
                 flex-direction: column;
-                
+
                 row-gap: 2rem;
-                li{
-                    a{
+
+                li {
+                    a {
                         font-size: v.$font-xlarge;
                     }
+
                 }
             }
         }
@@ -256,6 +292,10 @@ p {
         column-gap: 1rem;
     }
 
+    i {
+        color: v.$color-default;
+    }
+
     img {
         cursor: pointer;
         width: 2rem;
@@ -275,5 +315,17 @@ p {
 
     p {
         cursor: pointer;
+    }
+}
+
+.footer {
+    background-color: v.$color-lightblack;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 5rem;
+
+    .container-content {
+        width: 100%;
     }
 }
