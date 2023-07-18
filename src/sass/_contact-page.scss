@@ -4,6 +4,10 @@
 
 #contact-page {
     @include center();
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 
     h1 {
         text-align: center;
@@ -12,18 +16,22 @@
             text-align: left;
         }
     }
-    hr{
+
+    hr {
         opacity: 1;
         border: v.$border-classic;
     }
-    .wraps{
+
+    .wraps {
         display: flex;
         flex-direction: column;
     }
-    .btn-submit{
+
+    .btn-submit {
         padding: 0.5rem 1rem;
     }
-    .content-wrap{
+
+    .content-wrap {
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -34,12 +42,23 @@
         box-shadow: v.$box-shadow;
         position: relative;
         padding: 2rem;
+
+        @media screen and (min-width : v.$lg-breakpoint ) {
+            width: 50rem;
+        }
     }
+
+    form {
+
+        @media screen and (min-width : v.$lg-breakpoint ) {
+            width: 100%;
+        }
+    }
+
     .form-group {
         display: flex;
         flex-direction: column;
         margin: 1rem 0;
-
         input {
             appearance: none;
             -moz-appearance: none;
@@ -55,9 +74,9 @@
             border: 0;
             background: transparent;
             border-radius: 0;
- ;
             display: block;
             margin-top: -.33em;
+
         }
     }
 }

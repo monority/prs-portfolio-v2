@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
 import NavBar from './Nav';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 const Header = () => {
 const navigate = useNavigate();
 const [active,SetActive] = useState(false);
+const location = useLocation();
+const isContactPage = location.pathname === '/contact';
 
 const headerChange = () =>{
     if (window.scrollY >= 392){
@@ -27,7 +29,13 @@ window.addEventListener("scroll", () => headerChange());
                             <h3>ronan.dev</h3>
                         </div>
                     </div>
-                    <NavBar />
+                    {!isContactPage && (
+                    <NavBar />)}
+                    {isContactPage && ( 
+                        <ul className='contact-li'>
+                            <li onClick={() => navigate("./")}>Home</li>
+                        </ul>
+                    )}
                     <div className="wrap">
                         <ul>
                             <li>

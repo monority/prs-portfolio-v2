@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './Home'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import Contact from './Pages/ContactPage'
+import Contact from './pages/ContactPage'
 
 
 
@@ -12,8 +12,8 @@ const Root = () => {
     <BrowserRouter>
     <Header></Header>
       <Routes>
-        
         <Route exact path="/" element={<Home />} />
+        <Route exact path="/contact" element={<Contact />} />
       </Routes>
       <Footer></Footer>
     </BrowserRouter>

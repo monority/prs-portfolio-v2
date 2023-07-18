@@ -1,15 +1,15 @@
 import './sass/main.scss';
-import SkillPage from './Pages/SkillPage';
-import ProjectPage from './Pages/ProjectPage';
-import LandingPage from './Pages/LandingPage';
-import AboutPage from './Pages/AboutPage';
-import TechPage from './Pages/TechPage';
-import ContactPage from './Pages/ContactPage'
+import SkillPage from './pages/SkillPage';
+import ProjectPage from './pages/ProjectPage';
+import LandingPage from './pages/LandingPage';
+import AboutPage from './pages/AboutPage';
+import TechPage from './pages/TechPage';
+import ContactPage from './pages/ContactPage'
+import Header from './components/Header';
 
-function Home() {
+const Home = () => {
 
   return (
-
     <div className="main">
       <div id="landing-page" className='block'>
         <div className="container-content">
@@ -57,6 +57,7 @@ function Home() {
         </div>
       </div>
     </div>
+   
   );
 }
 

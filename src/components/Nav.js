@@ -17,7 +17,7 @@ function Navbar() {
             <div className="list-wrap" ref={navRef}>
                 <ul>
                     <li className="nav-item">
-                        <Link onClick={showNavbar} to="landing-page" offset={-150} spy={true} smooth={true} duration={300}>Home</Link>
+                        <Link onClick={showNavbar} to="landing-page" offset={-150} spy={true} smooth={true} duration={300}>Accueil</Link>
                     </li>
                     <li className="nav-item">
                         <Link onClick={showNavbar} to="about-page" offset={-100} spy={true} smooth={true} duration={300}>About</Link>
