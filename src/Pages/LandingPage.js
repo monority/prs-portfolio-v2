@@ -2,8 +2,8 @@ import React from 'react'
 import IconCustom from '../components/IconCustom';
 import cv from '../cv.pdf'
 import { Link } from 'react-router-dom';
+import Contact from '../components/Contact'
 const LandingPage = () => {
-
 
     return (
         <>
@@ -25,7 +25,7 @@ const LandingPage = () => {
                     <p>Bienvenue, je suis Ronan Chenu.<br />Je souhaite créer des belles applications web. </p>
                 </div>
                 <div className="btn-wrap">
-                    <p className='btn-contact'>Contact</p>
+                    <Contact></Contact>
                     <span className='btn-contact'>
                         <Link
                             to={cv}

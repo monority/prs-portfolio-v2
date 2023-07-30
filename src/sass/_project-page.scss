@@ -3,64 +3,45 @@
 
 
 #project-page {
-
-    .subtitle-wrap{
-        column-gap: 1rem;
+    .cards-wrap{
         display: flex;
-        align-items: center;
+        gap:2rem;
+        flex-wrap: wrap;
     }
-    .wrap {
-        display: flex;
-        flex-direction: column;
-    }
-    .text-wrap{
-        display: flex;
-        flex-direction: column;
-        flex-basis: 50%;
-        align-items: center;
-        justify-content: space-evenly;
-        text-align: center;
-        img{
-            width: 2rem;
-            height: 100%;
-        }
-        p{
-            font-size: v.$font-xsmedium;
-        }
-        h3{
-            font-size: v.$font-xsmedium;
-        }
-    }
-    .box-wrap {
-        display: flex;
-        background-color: rgb(233, 237, 241);
+    .card-wrap {
+        background-color: v.$background-main-color;
         box-shadow: v.$box-shadow;
-        border: v.$border-hard;
-        border-radius: 1rem;
-        height:25rem;
-        padding: 2rem;
-        gap: 5rem;
-        transition: all 0.5s ease-in-out;
-        &:hover {
-            transform: scale(1.01);
-
-        }
-    }
-    .wrap{
-        row-gap: 5rem;
-    }
-    .image-wrap{
+        border-radius: 1.5rem;
+        border: v.$border-classic;
         display: flex;
-        align-items: center;
-        flex-basis: 65%;
-        justify-content: center;
-        img {
-            width: 10rem;
+        flex-direction: column;
+        flex-basis: 22%;
+        
+        width: 15rem;
+        height: 25rem;
 
+        .text-wrap {
+            padding: 1rem;
+        }
+
+        h3 {
+            font-size: v.$font-medium;
+        }
+        h5{
+            color: v.$color-faded-lightgrey;
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        p {
+            font-size: v.$font-lsmall;
+        }
+
+        img {
+            width: 15rem;
+            height: 10rem;
+            border-top-left-radius: 1.5rem;
+            border-top-right-radius: 1.5rem;
         }
     }
-    .reversed{
-        flex-direction: row-reverse;
-    }
-
 }

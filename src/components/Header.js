@@ -4,20 +4,20 @@ import NavBar from './Nav';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 const Header = () => {
-const navigate = useNavigate();
-const [active,SetActive] = useState(false);
-const location = useLocation();
-const isContactPage = location.pathname === '/contact';
+    const navigate = useNavigate();
+    const [active, SetActive] = useState(false);
+    const location = useLocation();
+    const isContactPage = location.pathname === '/contact';
 
-const headerChange = () =>{
-    if (window.scrollY >= 392){
-        SetActive(true)
+    const headerChange = () => {
+        if (window.scrollY >= 392) {
+            SetActive(true)
+        }
+        else {
+            SetActive(false);
+        }
     }
-    else{
-        SetActive(false);
-    }
-}
-window.addEventListener("scroll", () => headerChange());
+    window.addEventListener("scroll", () => headerChange());
     return (
         <div className={`header ${active ? 'scrolled' : ''}`}>
 
@@ -29,23 +29,14 @@ window.addEventListener("scroll", () => headerChange());
                             <h3>ronan.dev</h3>
                         </div>
                     </div>
-                    {!isContactPage && (
-                    <NavBar />)}
-                    {isContactPage && ( 
-                        <ul className='contact-li'>
-                            <li onClick={() => navigate("./")}>Home</li>
-                        </ul>
-                    )}
+                    <NavBar />
                     <div className="wrap">
                         <ul>
                             <li>
                                 <Link target='__blank' to="https://www.github.com/monority"><i className='fa-brands fa-github'></i></Link>
                             </li>
                             <li>
-                            <Link  target='__blank' to="https://www.linkedin.com/in/ronanchenu/"><i className='fa-brands fa-linkedin'></i></Link>
-                            </li>
-                            <li>
-                           <i onClick={() => navigate("./contact")} className="fa-solid fa-envelope"></i>
+                                <Link target='__blank' to="https://www.linkedin.com/in/ronanchenu/"><i className='fa-brands fa-linkedin'></i></Link>
                             </li>
                         </ul>
                     </div>

@@ -5,8 +5,6 @@ import LandingPage from './pages/LandingPage';
 import AboutPage from './pages/AboutPage';
 import TechPage from './pages/TechPage';
 import ContactPage from './pages/ContactPage'
-import Header from './components/Header';
-
 const Home = () => {
 
   return (

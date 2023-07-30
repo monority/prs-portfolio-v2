@@ -1,6 +1,6 @@
 import React from 'react'
 import BoxContent from '../components/BoxContent'
-
+import Card from '../components/Card'
 const ProjectPage = () => {
 
   return (
@@ -9,34 +9,33 @@ const ProjectPage = () => {
         <div className="title-wrap">
           <h2>Mes projets</h2>
         </div>
-        <div className="wrap">
-          {/* <BoxContent
-            title="Calling cards"
-            arial_image="image exam project front"
-            image="leaf.png"
-            content="Project created in 1 day. Goal was to set up an app compatible with tablet and most mobile phones where you can register calling cards for a company"
-            typeIcon="BiLogoRedux"
-            isShow="true"
-            typeIconSecond="BiLogoReact"
-            reverse="reversed"
+        <div className="cards-wrap">
+          <Card
+            image="baldursgate"
+            title="Duel Game"
+            subtitle="Baldur's Gate"
+            description="Ce projet fut construit en php. Le but est de créer un jeu de duel en utilisant les classes PHP."
+            action=""
           />
-          <BoxContent
-            title="Vegetables Project"
-            arial_image="image exam project front"
-            image="strapi-basic.png"
-            content="Project builded with local api using strappi"
-            typeIcon="BiLogoRedux"
+          <Card
+            image="baldursgate"
+            title="Dashboard"
+            subtitle="Regroupement de fonctionnalités"
+            description="Projet qui regroupe agenda/tâches/emails"
+            action=""
           />
-           <BoxContent
-            title="Php Game"
-            arial_image="image exam project front"
-            image="leaf.png"
-            content="Un projet de jeu de duel simple avec un ennemi aléatoire"
-            typeIcon="BiLogoRedux"
-            isShow="true"
-            typeIconSecond="BiLogoReact"
-            reverse="reversed"
-          /> */}
+          <Card
+            image="baldursgate"
+            title="Projet Baldur's Gate"
+            description="Ce projet fut construit en php. Le but est de créer un jeu de duel en utilisant les classes PHP."
+            action=""
+          />
+          <Card
+            image="baldursgate"
+            title="Projet Baldur's Gate"
+            description="Ce projet fut construit en php. Le but est de créer un jeu de duel en utilisant les classes PHP."
+            action=""
+          />
         </div>
       </div>
     </>
