@@ -23,7 +23,7 @@ function Navbar() {
                         <Link onClick={showNavbar} to="about-page" offset={-100} spy={true} smooth={true} duration={300}>About</Link>
                     </li>
                     <li className="nav-item">
-                        <Link onClick={showNavbar} to="tech-page" offset={-50} spy={true} smooth={true} duration={300}>Techno</Link>
+                        <Link onClick={showNavbar} to="tech-page" offset={0} spy={true} smooth={true} duration={300}>Techno</Link>
                     </li>
                     <li className="nav-item">
                         <Link onClick={showNavbar} to="focus-page" offset={-50} spy={true} smooth={true} duration={300}>Skills</Link>

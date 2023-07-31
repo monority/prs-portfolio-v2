@@ -32,7 +32,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div id="focus-page" className='block'>
+      <div id="skill-page" className='block'>
         <div className="container-content">
           <div className="wraps">
             <SkillPage />

@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from 'react';
-
+import React, { useState } from 'react';
 import NavBar from './Nav';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+
 const Header = () => {
     const navigate = useNavigate();
     const [active, SetActive] = useState(false);
-    const location = useLocation();
-    const isContactPage = location.pathname === '/contact';
+  
 
     const headerChange = () => {
         if (window.scrollY >= 392) {

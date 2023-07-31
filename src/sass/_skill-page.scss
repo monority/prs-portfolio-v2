@@ -2,7 +2,7 @@
 @import "mixin";
 
 
-#focus-page {
+#skill-page {
     position: relative;
     @include center();
 
@@ -61,6 +61,13 @@
         position: absolute;
         top: -3rem;
     }
+    .skill-wrap-content{
+
+            h1{
+                text-align: center;
+               }
+    
+    }
     .right{
         display: flex;
         justify-content: flex-end;
@@ -77,8 +84,9 @@
     }
     .right-title{
         @media screen and (min-width : v.$lg-breakpoint ) {
-            left: 18rem;
+            left: 36rem;
             right: 0;
+    
         }
     }
     .title-wrap{

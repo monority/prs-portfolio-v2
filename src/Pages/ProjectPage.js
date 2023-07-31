@@ -1,5 +1,4 @@
 import React from 'react'
-import BoxContent from '../components/BoxContent'
 import Card from '../components/Card'
 const ProjectPage = () => {
 
@@ -18,22 +17,24 @@ const ProjectPage = () => {
             action=""
           />
           <Card
-            image="baldursgate"
+            image="dashboard"
             title="Dashboard"
             subtitle="Regroupement de fonctionnalités"
-            description="Projet qui regroupe agenda/tâches/emails"
+            description="Projet qui regroupe agenda/tâches/emails créé avec ViteJS / ReactJS"
             action=""
           />
           <Card
-            image="baldursgate"
-            title="Projet Baldur's Gate"
-            description="Ce projet fut construit en php. Le but est de créer un jeu de duel en utilisant les classes PHP."
+            image="cars"
+            title="Cars Store"
+            subtitle="Commerce de voitures"
+            description="Application mobile créé sous React native."
             action=""
           />
           <Card
-            image="baldursgate"
-            title="Projet Baldur's Gate"
-            description="Ce projet fut construit en php. Le but est de créer un jeu de duel en utilisant les classes PHP."
+            image="hotel"
+            title="Hotel3000"
+            subtitle="Reservation et départ d'hôtel"
+            description="Projet construit en simple HTML/CSS/JS, réservation et départ d'hôtel côté client"
             action=""
           />
         </div>
