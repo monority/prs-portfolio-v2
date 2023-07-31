@@ -1,7 +1,8 @@
 import React from 'react'
 import Card from '../components/Card'
 const ProjectPage = () => {
-
+const iconTelefoot = ["sass"];
+const iconTelefoots = ["php"];
   return (
     <>
       <div className="content-wrap">
@@ -10,13 +11,17 @@ const ProjectPage = () => {
         </div>
         <div className="cards-wrap">
           <Card
-            image="baldursgate"
-            title="Duel Game"
-            subtitle="Baldur's Gate"
-            description="Ce projet fut construit en php. Le but est de créer un jeu de duel en utilisant les classes PHP."
+            image="telefoot"
+            title="Telefoot  "
+            subtitle="Applications pour abonnés"
+            description="Projet construit en PHP/MVC. Lié à une base de données, l'utilisateur peut s'enregistrer/login/changer son mot de passe via récupération email"
             action=""
+            icons={iconTelefoot}
+            iconsback={iconTelefoots}
+            RenderBack={true}
+            RenderFront={true}
           />
-          <Card
+          {/* <Card
             image="dashboard"
             title="Dashboard"
             subtitle="Regroupement de fonctionnalités"
@@ -36,7 +41,7 @@ const ProjectPage = () => {
             subtitle="Reservation et départ d'hôtel"
             description="Projet construit en simple HTML/CSS/JS, réservation et départ d'hôtel côté client"
             action=""
-          />
+          /> */}
         </div>
       </div>
     </>
