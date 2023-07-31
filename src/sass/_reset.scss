@@ -8,17 +8,23 @@
     scrollbar-width: thin;
     text-rendering: optimizeLegibility;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    
+
 }
 
 html {
+    
     font-size: 62.5%;
+    
 }
 
 body {
+    
     background-color: v.$background-main-color;
     color: v.$color-default;
     font-family: v.$font-fifth;
     font-size: 1.6rem;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }

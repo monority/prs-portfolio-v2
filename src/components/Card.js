@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from './Button'
 
 const Card = ({ title, action, description, image , subtitle}) => {
     return (
@@ -14,6 +15,11 @@ const Card = ({ title, action, description, image , subtitle}) => {
                 </div>
                 <div className="desc-wrap">
                     <p>{description}</p>
+                </div>
+                <div className="button-wrap">
+                    <Button className="btn-read">
+                        En savoir plus
+                    </Button>
                 </div>
             </div>
             </div>

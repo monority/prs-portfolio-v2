@@ -53,11 +53,14 @@ p {
 
     min-height: 60vh;
     margin: 4rem 0;
+
+
 }
 
 .container {
     margin: 0 auto;
-    max-width: 130rem;
+    max-width: 110rem;
+    
 }
 
 .btn-contact {
@@ -77,6 +80,24 @@ p {
         transform: scale(1.02);
     }
 }
+.btn-read {
+    background-color: #a851e7b6;
+    box-shadow: v.$box-shadow;
+    border: v.$border-classic;
+    border-radius: 1rem;
+    padding: 0.5rem 0.7rem;
+    color: v.$color-white;
+    font-size: 1.5rem;
+    transition: all 0.5s;
+    text-align: center;
+    width: 13rem;
+
+    &:hover {
+        background-color: #5b2da6ad;
+        box-shadow: v.$box-shadow-white;
+        transform: scale(1.02);
+    }
+}
 
 .container-content {
     margin: 0 auto;
@@ -84,6 +105,7 @@ p {
 
     @media screen and (min-width : v.$lg-breakpoint ) {
         max-width: 110rem;
+        
     }
 }
 
@@ -151,14 +173,15 @@ p {
 .header.scrolled {
     height: 4.1rem;
     background: transparent;
+    background:linear-gradient(to left bottom, rgba(96, 122, 250, 0.050), rgba(147, 159, 253, 0.050), rgba(199, 210, 254, 0.050));
 }
 
 .header {
     backdrop-filter: blur(2px);
     box-shadow: v.$box-lightshadow;
     height: 5.3rem;
+    background:linear-gradient(to left bottom, rgba(96, 122, 250, 0.150), rgba(147, 159, 253, 0.150), rgba(199, 210, 254, 0.150));
     position: fixed;
-    background: rgb(230, 238, 237);
     transition: all 0.3s ease-in-out;
     width: 100%;
     top: 0;
