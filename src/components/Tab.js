@@ -2,6 +2,7 @@ import { useState } from "react";
 import iconsillu from "../array/iconsillu";
 import iconsfront from "../array/iconsfront";
 import iconsback from "../array/iconsback";
+import { nanoid } from "nanoid";
 
 
 const Tab = () => {
@@ -12,19 +13,19 @@ const Tab = () => {
   };
   const iconillustration = iconsillu.map(icon => {
     return (
-      <div className="image-wrap">
+      <div className="image-wrap" key={nanoid()}>
         <img src={`${process.env.PUBLIC_URL}/icon-illustration/${icon}.svg`} alt="" />
       </div>)
   })
   const iconfront = iconsfront.map(icon => {
     return (
-      <div className="image-wrap">
+      <div className="image-wrap" key={nanoid()}>
         <img src={`${process.env.PUBLIC_URL}/icon-front/${icon}.svg`} alt="" />
       </div>)
   })
   const iconback = iconsback.map(icon => {
     return (
-      <div className="image-wrap">
+      <div className="image-wrap" key={nanoid()}>
         <img src={`${process.env.PUBLIC_URL}/icon-back/${icon}.svg`} alt="" />
       </div>)
   })

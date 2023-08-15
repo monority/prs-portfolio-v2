@@ -1,4 +1,3 @@
-
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useRef } from "react";
 import { Link } from "react-scroll";

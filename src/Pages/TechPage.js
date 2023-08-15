@@ -16,7 +16,8 @@ const TechPage = () => {
                     <div className="box-wrap-tab">
                         <Tab></Tab>
                     </div>
-                </div></div>
+                </div>
+            </div>
         </>
     )
 }

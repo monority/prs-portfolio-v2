@@ -14,10 +14,10 @@ const LandingPage = () => {
                 </div>
                 <div className="info-wrap">
                     <p><IconCustom
-                        type="FaLocationDot"
+                        type="AiOutlineHome"
                         size="1rem"
                     /> Lille</p> <p><IconCustom
-                        type="ImProfile"
+                        type="AiOutlineIdcard"
                         size="1rem"
                     /> Junior</p>
                 </div>
@@ -33,7 +33,7 @@ const LandingPage = () => {
                             target="_blank"
                             rel="noreferrer">
                             <IconCustom
-                                type="FiDownload"
+                                type="AiOutlineArrowDown"
                                 size="1rem"
                             /> CV
                         </Link>

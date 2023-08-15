@@ -3,7 +3,10 @@ import Card from '../components/Card'
 const ProjectPage = () => {
 const iconTelefoot = ["sass"];
 const iconTelefoots = ["php"];
-  return (
+const modaltelefoot = () =>{
+  return false;
+}
+return (
     <>
       <div className="content-wrap">
         <div className="title-wrap">
@@ -15,7 +18,7 @@ const iconTelefoots = ["php"];
             title="Telefoot  "
             subtitle="Applications pour abonnés"
             description="Projet construit en PHP/MVC. Lié à une base de données, l'utilisateur peut s'enregistrer/login/changer son mot de passe via récupération email"
-            action=""
+            action={() => modaltelefoot()}
             icons={iconTelefoot}
             iconsback={iconTelefoots}
             RenderBack={true}
