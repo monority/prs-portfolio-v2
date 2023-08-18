@@ -86,7 +86,7 @@ const Contact = () => {
               />
             </div>
 
-            <input type="submit" value="Valider" className="btn-contact btn-submit" />
+            <input type="submit" value="Valider" className="btn-contact btn-submit" aria-label='Envoyer le formulaire'/>
           </form>
           {status === "sending" && (
             <div className='message loading'>Envoi..</div>

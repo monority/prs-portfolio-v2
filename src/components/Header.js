@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import NavBar from './Nav';
-import { useNavigate } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
+import IconCustom from './IconCustom';
 
 const Header = () => {
     const navigate = useNavigate();
     const [active, SetActive] = useState(false);
-  
+
 
     const headerChange = () => {
         if (window.scrollY >= 392) {
@@ -32,10 +32,20 @@ const Header = () => {
                     <div className="wrap">
                         <ul>
                             <li>
-                                <Link target='__blank' to="https://www.github.com/monority"><i className='fa-brands fa-github'></i></Link>
+                                <Link target='__blank' to="https://www.github.com/monority" aria-label='lien vers mon github'>
+                                    <IconCustom
+                                        type="AiOutlineGithub"
+                                        size="2.7rem"
+                                    />
+                                </Link>
                             </li>
                             <li>
-                                <Link target='__blank' to="https://www.linkedin.com/in/ronanchenu/"><i className='fa-brands fa-linkedin'></i></Link>
+                                <Link target='__blank' aria-label="Lien vers mon linkedin" to="https://www.linkedin.com/in/ronanchenu/">
+                                <IconCustom
+                                        type="AiOutlineLinkedin"
+                                        size="2.7rem"
+                                    />
+                                    </Link>
                             </li>
                         </ul>
                     </div>

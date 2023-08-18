@@ -12,7 +12,7 @@ const AboutPage = () => {
         <p>C'est dans le côté front-end que je m'épanouis et mon but à long terme est de devenir UX Designer / Front-end développeur. </p>
       </div>
       <div className="image-wrap">
-        <img src={`${process.env.PUBLIC_URL}/dev.png`} alt="Developer Illustration" />
+        <img src="https://www.cjoint.com/doc/23_08/MHrroXO1WZq_dev.png" alt="Developer Illustration" />
       </div>
     </>
   )

@@ -5,7 +5,7 @@ const Contact = () => {
     return (
         <>
             <span className='btn-contact'>
-            <Link  to="contact-page" offset={-150} spy={true} smooth={true} duration={300}>Contact</Link>
+            <Link  aria-label="Envoi vers le formulaire de contact" to="contact-page" offset={-150} spy={true} smooth={true} duration={300}>Contact</Link>
             </span>
         </>
     )

@@ -1,4 +1,4 @@
-import { FaBars, FaTimes } from "react-icons/fa";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { useRef } from "react";
 import { Link } from "react-scroll";
 import React from 'react';
@@ -33,14 +33,17 @@ function Navbar() {
                 </ul>
                 <button
                     className="nav-btn nav-close-btn"
-                    onClick={showNavbar}>
-                    <FaTimes />
+                    onClick={showNavbar}
+                    aria-label="Fermer le menu"
+                    >
+                    <AiOutlineClose />
                 </button>
             </div>
             <button
                 className="nav-btn"
+                aria-label="Ouvrir le menu"
                 onClick={showNavbar}>
-                <FaBars />
+                <AiOutlineMenu />
             </button>
         </div>
     );

@@ -37,7 +37,7 @@ const Card = ({ title, action, description, image, subtitle, icons, iconsback, R
             )}
           </div>
           <div className="button-wrap">
-            <Button className="btn-read">
+            <Button className="btn-read" arialabel="en savoir plus">
               En savoir plus
             </Button>
           </div>

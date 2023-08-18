@@ -31,7 +31,7 @@ h3 {
 h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
-    color: rgb(100, 183, 147);
+    color: rgb(58, 128, 97);
     text-align: center;
 
     @media screen and (min-width : v.$lg-breakpoint ) {
@@ -325,6 +325,11 @@ p {
         display: flex;
         align-items: center;
         column-gap: 1rem;
+        ul li a{
+            &:hover{
+                color: rgb(26, 26, 26);
+            }
+        }
     }
 
     i {

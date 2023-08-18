@@ -28,6 +28,7 @@ const LandingPage = () => {
                     <Contact></Contact>
                     <span className='btn-contact'>
                         <Link
+                        aria-label='télécharger le cv'
                             to={cv}
                             download="CV-Ronan Chenu"
                             target="_blank"
